@@ -3,9 +3,18 @@ body {
   color: #5a5a5a;
 }
 
+/* ******************************************************************** */
+.nav-item a {
+  color: #999;
+  transition: ease-in-out color .15s;
+}
+.nav-item a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
 
 /* ******************************************************************** */
-/* Carousel */
 .carousel-text {
   position: absolute;
   width: 100%;
