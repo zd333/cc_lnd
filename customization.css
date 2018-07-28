@@ -1,0 +1,102 @@
+body {
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+}
+
+
+/* ******************************************************************** */
+/* Carousel */
+.carousel-text {
+  position: absolute;
+  width: 100%;
+  color: #FFF;
+  z-index: 11;
+}
+.carousel-top-text {
+  top: 7%;
+}
+.carousel-bottom-text {
+  bottom: 7%;
+}
+a.carousel-phone {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.carousel-item {
+  background-color: transparent;
+  height: calc(100vh - 56px);
+}
+@media (max-width: 640px) {
+  .carousel-text h1 {
+    font-size: 24px;
+  }
+  .carousel-text h3 {
+    font-size: 24px;
+  }
+  .carousel-text h4 {
+    font-size: 18px;
+  }
+}
+@media screen and (orientation: portrait) {
+  .carousel-item {
+    height: 40vh;
+  }
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: auto;
+  min-height: 100%;
+}
+/* ******************************************************************** */
+
+
+/* ******************************************************************** */
+/* Services */
+.marketing {
+  margin-top: 2rem;
+}
+.marketing .col-lg-6 {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: 200;
+}
+.marketing .col-lg-6 p {
+  margin-right: 5rem;
+  margin-left: 5rem;
+}
+
+.featurette-divider {
+  margin: 2rem 0;
+}
+.featurette-heading {
+  font-weight: 200;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+@media (min-width: 40em) {
+  .featurette-heading {
+    font-size: 30px;
+  }
+}
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+/* ******************************************************************** */
+
+
+#map {
+  position: relative;
+  height: 60vh;
+  /* width: 100%; */
+  left: 0;
+  top: 0;
+}
