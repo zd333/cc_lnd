@@ -37,14 +37,20 @@ a.carousel-phone {
   height: calc(100vh - 56px);
 }
 @media (max-width: 640px) {
+  .carousel-top-text {
+    top: 2%;
+  }
+  .carousel-bottom-text {
+    bottom: 8%;
+  }
   .carousel-text h1 {
-    font-size: 24px;
+    font-size: 18px;
   }
   .carousel-text h3 {
-    font-size: 24px;
+    font-size: 16px;
   }
   .carousel-text h4 {
-    font-size: 18px;
+    font-size: 12px;
   }
 }
 @media screen and (orientation: portrait) {
@@ -64,7 +70,6 @@ a.carousel-phone {
 
 
 /* ******************************************************************** */
-/* Services */
 .marketing {
   margin-top: 2rem;
 }
@@ -75,10 +80,17 @@ a.carousel-phone {
 .marketing h2 {
   font-weight: 200;
 }
-.marketing .col-lg-6 p {
-  margin-right: 5rem;
-  margin-left: 5rem;
+.marketing .col-lg-6 p, h2 {
+  margin-right: 2rem;
+  margin-left: 2rem;
 }
+@media (min-width: 640px) {
+  .marketing .col-lg-6 p, h2 {
+    margin-right: 5rem;
+    margin-left: 5rem;
+  }
+}
+
 
 .featurette-divider {
   margin: 2rem 0;

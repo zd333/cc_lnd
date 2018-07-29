@@ -151,25 +151,25 @@
 
           <div class="col-lg-6">
             <img class="rounded-circle" src="./images/stuff/vladimir.jpg" width="140" height="140">
-            <h2>Володимир Батькович</h2>
+            <h2>Тихонюк Володимир Володимирович</h2>
             <p>Лікар ХХХ категорій. Дипломований фацівець з ХХХХХХХ. Сертифікований ХХХХХ.</p>
           </div>
 
           <div class="col-lg-6">
             <img class="rounded-circle" src="./images/stuff/anton.jpg" width="140" height="140">
-            <h2>Антон Батькович</h2>
+            <h2>Добровольський Антон Олегович</h2>
             <p>Лікар ХХХ категорій. Дипломований фацівець з ХХХХХХХ. Сертифікований ХХХХХ.</p>
           </div>
 
           <div class="col-lg-6">
             <img class="rounded-circle" src="./images/stuff/kate.jpg" width="140" height="140">
-            <h2>Катерина Батьківна</h2>
+            <h2>Малежик Катерина Петрівна</h2>
             <p>Лікар ХХХ категорій. Дипломований фацівець з ХХХХХХХ. Сертифікований ХХХХХ.</p>
           </div>
 
           <div class="col-lg-6">
             <img class="rounded-circle" src="./images/stuff/alex.png" width="140" height="140">
-            <h2>Олександр Батькович</h2>
+            <h2>Огір Олександр Вікторович</h2>
             <p>Лікар ХХХ категорій. Дипломований фацівець з ХХХХХХХ. Сертифікований ХХХХХ.</p>
           </div>
 
@@ -292,10 +292,15 @@
 
     <script>
       function initMap() {
-        var place = { lat: 50.399135, lng: 30.338843 };
         var map = new google.maps.Map(
-          document.getElementById('map'), { zoom: 17, center: place });
-        var marker = new google.maps.Marker({ position: place, map: map });
+          document.getElementById('map'),
+          {
+            zoom: 15,
+            center: { lat: 50.402095, lng: 30.341094 },
+            mapTypeId: google.maps.MapTypeId.HYBRID
+          }
+        );
+        var marker = new google.maps.Marker({ position: { lat: 50.399135, lng: 30.338843 }, map: map });
       }
     </script>
 
